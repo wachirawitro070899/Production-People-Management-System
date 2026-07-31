@@ -1,18 +1,11 @@
-Production People Management System - V200 Stable
+Production People Management System V201 - GitHub Pages Fixed
 
-วิธีอัปโหลด
-1. ลบไฟล์เดิมใน Repository
-2. อัปโหลดไฟล์และโฟลเดอร์ทั้งหมดภายใน ZIP นี้ลงที่ root ของ Repository
-3. Settings > Pages: main / (root)
-4. เปิดเว็บแล้วกด Ctrl+F5 หนึ่งครั้ง
+แก้ไข:
+- กำหนด Base URL สำหรับ GitHub Pages repository
+- แก้เส้นทาง CSS และ JavaScript ให้โหลดจาก /Production-People-Management-System/
+- ใช้งานกับ Settings > Pages: main / (root)
 
-การปรับปรุง
-- แยก CSS และ JavaScript ออกจาก index.html เพื่อลดโค้ดซ้อนในหน้าเดียว
-- ลบไฟล์สำเนา script_*.js, index.html.js และ 404.html.js
-- ใส่เลขเวอร์ชันใน asset URL เพื่อลดปัญหา cache เก่า
-- 404.html ส่งกลับหน้าหลักเสมอ ไม่เก็บสำเนาแอปคนละเวอร์ชัน
-- คง Firebase project และข้อมูลพนักงานเดิม
-- ตรวจ JavaScript syntax ทุกไฟล์ก่อนจัดส่ง
-
-หมายเหตุ
-ความเสถียรของข้อมูลข้ามเครื่องขึ้นอยู่กับ Firebase Authentication, Firestore Rules และอินเทอร์เน็ตด้วย
+วิธีอัปโหลด:
+1. ลบไฟล์เก่าใน Repository หรืออัปโหลดไฟล์ชุดนี้ทับ
+2. ต้องให้ index.html, .nojekyll และโฟลเดอร์ assets อยู่ที่หน้าแรกของ Repository
+3. รอ Actions Deploy สำเร็จ แล้วกด Ctrl+F5

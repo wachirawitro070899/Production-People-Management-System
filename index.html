@@ -2,6 +2,7 @@
 
 <html lang="th">
 <head>
+<base href="/Production-People-Management-System/">
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <!-- Version 37: Evaluation Plan and Job Observation -->
@@ -16,7 +17,7 @@
 
 
 
-<link href="assets/css/app.css?v=200" rel="stylesheet"/><meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control"/><meta content="no-cache" http-equiv="Pragma"/><meta content="0" http-equiv="Expires"/><meta content="V200 Stable" name="app-version"/></head>
+<link href="./assets/css/app.css?v=200" rel="stylesheet"/><meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control"/><meta content="no-cache" http-equiv="Pragma"/><meta content="0" http-equiv="Expires"/><meta content="V201 GitHub Pages Fixed" name="app-version"/></head>
 <body>
 <header>
 <div class="header-brand">
@@ -126,7 +127,7 @@
 <input accept="image/jpeg,image/png,image/webp" hidden="" id="changePhotoInput" type="file">
 <div class="modal" id="editModal"><div class="modal-card employee-edit-card"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;position:sticky;top:0;background:#fff;z-index:5;padding:4px 0 10px"><h2 style="margin:0">แก้ไขข้อมูลพนักงาน</h2><button class="btn" form="editEmployeeForm" type="submit">💾 เซฟข้อมูล</button></div><form id="editEmployeeForm"><div><label>รหัสพนักงาน<input id="editEmpId" required=""/></label></div><div><label>ชื่อภาษาไทย<input id="editThaiName"/></label></div><div class="full"><label>ชื่อภาษาอังกฤษ<input id="editEmpName" required="" style="text-transform:uppercase"/></label></div><div><label>เพศ<select id="editGender"><option value="">-</option><option>Male</option><option>Female</option></select></label></div><div><label>สัญชาติ<select id="editNationality"><option value="">เลือกสัญชาติ</option><option value="Thai">Thai / ไทย</option><option value="Cambodian">Cambodian / กัมพูชา</option><option value="Myanmar">Myanmar / เมียนมา</option><option value="Laotian">Laotian / ลาว</option><option value="Chinese">Chinese / จีน</option><option value="Other">Other / อื่น ๆ</option></select></label></div><div><label>วันที่เริ่มงาน<input id="editStartDate" required="" type="date"/></label></div><div><label>ประเภทสัญญา<select id="editContractType"><option>Permanent</option><option>Subcontractor</option><option>Temporary</option></select></label></div><div><label>เบอร์โทรติดต่อ<input id="editEmpPhone" type="tel"/></label></div><div><label>Section<select id="editEmpSection" required=""></select></label></div><div><label>ตำแหน่ง<select id="editEmpPosition" required=""></select></label></div><div><label>กะทำงาน<select id="editEmpShift"><option value="">ยังไม่ระบุกะ</option><option value="A">Shift A / กะ A</option><option value="B">Shift B / กะ B</option></select></label></div><div class="full modal-actions edit-save-actions"><button class="btn secondary" id="cancelEdit" type="button">ยกเลิก</button><button class="btn" type="submit">💾 เซฟและบันทึกข้อมูล</button></div></form></div></div>
 <div class="notice hidden" id="photoStatus" style="position:fixed;right:16px;bottom:16px;z-index:50;max-width:360px"></div><div class="modal" id="loginModal"><div class="modal-card"><h2>Admin Login</h2><p style="color:#6b7280">เข้าสู่ระบบด้วยบัญชีที่สร้างไว้ใน Firebase Authentication</p><label>Email<input autocomplete="username" id="loginEmail" type="email"/></label><br><br/><label>Password<input autocomplete="current-password" id="loginPassword" type="password"/></label><div id="loginError" style="color:#b42318;margin-top:10px"></div><div class="modal-actions"><button class="btn secondary" id="cancelLogin">ยกเลิก</button><button class="btn" id="submitLogin">เข้าสู่ระบบ</button></div></br></div></div>
-<script src="assets/js/app.js?v=200" type="module"></script>
+<script src="./assets/js/app.js?v=200" type="module"></script>
 <!-- v32 bilingual UI labels: employee names and user-entered data are never translated -->
 
 <div class="bilingual-badge no-print">🌐 ไทย / English</div>
@@ -142,25 +143,25 @@
 <div class="portal-actions"><button class="btn secondary" id="employeePortalCancel" type="button">ยกเลิก</button><button class="btn" id="employeePortalEnter" type="button">เข้าสู่หน้าทดสอบ</button></div>
 </div>
 </div>
-<script defer="True" id="employeePortalPatch" src="assets/js/patch-1.js?v=200"></script>
+<script defer="True" id="employeePortalPatch" src="./assets/js/patch-1.js?v=200"></script>
 <!-- v52: fixed employee portal access to module-scoped employee data -->
 <!-- v81: working Section and Employee dropdowns for Skill Matrix and Skill Card -->
 <!-- v56: robust submit and score for employee/admin modes -->
 <!-- v83 standalone skill pages recovery patch -->
-<script defer="True" id="v83SkillRecoveryPatch" src="assets/js/patch-2.js?v=200"></script>
-<script defer="True" id="stable-skill-print-download-fix" src="assets/js/patch-3.js?v=200"></script>
-<script defer="True" id="v108-org-section-pdf-fix" src="assets/js/patch-4.js?v=200"></script>
+<script defer="True" id="v83SkillRecoveryPatch" src="./assets/js/patch-2.js?v=200"></script>
+<script defer="True" id="stable-skill-print-download-fix" src="./assets/js/patch-3.js?v=200"></script>
+<script defer="True" id="v108-org-section-pdf-fix" src="./assets/js/patch-4.js?v=200"></script>
 
-<script defer="True" id="v117-button-safety-fix" src="assets/js/patch-5.js?v=200"></script>
+<script defer="True" id="v117-button-safety-fix" src="./assets/js/patch-5.js?v=200"></script>
 
-<script defer="True" id="v127-enterprise-skill-matrix-js" src="assets/js/patch-6.js?v=200"></script>
+<script defer="True" id="v127-enterprise-skill-matrix-js" src="./assets/js/patch-6.js?v=200"></script>
 
-<script defer="True" id="v130-org-safe-js" src="assets/js/patch-7.js?v=200"></script>
+<script defer="True" id="v130-org-safe-js" src="./assets/js/patch-7.js?v=200"></script>
 
-<script defer="True" id="v131-skill-matrix-approval-js" src="assets/js/patch-8.js?v=200"></script>
+<script defer="True" id="v131-skill-matrix-approval-js" src="./assets/js/patch-8.js?v=200"></script>
 <!-- V133 FINAL FIX START -->
 
-<script defer="True" id="v133-final-behavior-fix" src="assets/js/patch-9.js?v=200"></script>
+<script defer="True" id="v133-final-behavior-fix" src="./assets/js/patch-9.js?v=200"></script>
 <!-- V133 FINAL FIX END -->
 </input></body></html>
 <!-- v58: auto update through Level 3; Level 3+ requires approval -->
